@@ -3,8 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib, json, cv2
 import numpy as np
 import base64
-
+import os
+import uvicorn
 from utils import preprocess_external_image
+
+port = int(os.environ.get("PORT", 8000))
+uvicorn.run("app:app", host="0.0.0.0", port=port)
 
 # Load model + class names + metrics
 model = joblib.load("model.pkl")

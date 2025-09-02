@@ -7,6 +7,7 @@ import jacketImg from "./assets/fashion/jacket.jpg";
 import pullImg from "./assets/fashion/pullover.jpg";
 import tshirtImg from "./assets/fashion/tshirt.jpg";
 
+
 const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
 
 export default function App() {
