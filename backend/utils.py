@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def preprocess_external_image(img, target_size=28):
     # Resize big first
     img = cv2.resize(img, (224, 224), interpolation=cv2.INTER_AREA)
